@@ -4,17 +4,27 @@
     .container {
         display: flex;
         align-items: center;
-        justify-content: start;
+        justify-content: space-between;
 
         .logo {
             padding: 0 50px 0 0;
         }
 
+        .mobile-bars {
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+
         .info-menu {
-            display: flex;
+            display: none;
             flex-direction: column;
             justify-content: space-between;
             width: 100%;
+
+            @media (min-width: 992px) {
+                display: flex;
+            }
 
             .info {
                 display: flex;
@@ -24,10 +34,15 @@
                 margin: 20px 0 0 0;
 
                 .company-info {
-                    display: flex;
+                    display: none;
                     align-items: center;
                     font-size: 15px;
                     font-weight: $font-weight-light;
+
+                    @media (min-width: 1200px) {
+                        display: flex;
+
+                    }
 
                     .phonenumber {
                         padding: 0 40px 0 0;
@@ -54,6 +69,11 @@
                     }
                 }
                 .social-media {
+                    display: none;
+                    @media (min-width: 1200px) {
+                        display: inline;
+                    }
+
                     i {
                         font-size: 1.2rem;
                         margin: 10px 0 20px 15px;

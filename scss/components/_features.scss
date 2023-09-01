@@ -1,14 +1,29 @@
 .features {
 
     .container {
-        display: flex;
-        justify-content: space-between;
+        display: none;
+        justify-content: center;
         align-items: center;
         border: 1px solid $color-border;
+        margin-top: 50px;
+
+        @media (min-width: 992px) {
+            display: flex;
+        }
+
+        @media (min-width: 1200px) {
+            display: flex;
+            justify-content: space-between;
+        }
 
         .features-info {
             width: 70%;
-            padding: 50px 100px 200px 60px;
+            padding: 50px 100px 100px 60px;
+            
+            @media (min-width: 1200px) {
+                padding: 50px 100px 200px 60px;
+
+            }
 
             .features-text {
                 font-size: 18px;
@@ -29,11 +44,16 @@
         }
 
         .features-categories {
-            display: grid;
+            display: none;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto;
             gap: 30px;
             padding-right: 50px;
+
+            @media (min-width: 1200px) {
+                display: grid;
+
+            }
 
             .features-cube {
                 div {

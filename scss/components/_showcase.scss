@@ -7,13 +7,29 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 80px;
+        padding-bottom: 50px;
+
+
+        @media (min-width: 1200px) {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
 
         .showcase-info {
 
             .showcase-title {
                 font-style: $font-DMsans;
-                font-size: 84px;
+                font-size: 44px;
                 font-weight: $font-weight-bold;
+
+                @media (min-width: 992px) {
+                    font-size: 64px;
+                }
+
+                @media (min-width: 1200px) {
+                    font-size: 84px;
+                }
                 
             }
 
@@ -26,9 +42,19 @@
             .showcase-buttons {
                 margin: 50px 0 0 0;
                 z-index: 1;
+                display: grid;
+
+                @media (min-width: 992px) {
+                    display: inline;
+                }
 
                 .theme-btn {
-                    margin: 0 10px 0 0;
+                    margin: 0px 0px 20px 0px;
+
+                    @media (min-width: 992px) {
+                        margin: 0 10px 0 0;
+                    }
+
                 }
             }
         }
@@ -36,11 +62,23 @@
         .showcase-image {
             margin-top: 80px;
             margin-right: -50px;
+            display: none;
+
+            @media (min-width: 1200px) {
+                display: inline;
+
+            }
+
         }
     }
     .background-lines {
         position: absolute;
         bottom: 0;
         z-index: -1;
+        display: none;
+
+        @media (min-width: 992px) {
+            display: inline;
+        }
     }
 }

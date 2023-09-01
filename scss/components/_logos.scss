@@ -1,9 +1,13 @@
 .logos {
     .container {
-        display: flex;
+        display: none;
         justify-content: space-between;
         align-items: center;
         margin-top: 70px;
         margin-bottom: 70px; 
+
+        @media (min-width: 1200px) {
+            display: flex;
+        }
     }
 }
