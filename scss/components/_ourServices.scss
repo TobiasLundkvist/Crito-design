@@ -1,0 +1,104 @@
+.our-services {
+    background-color: $color-beige;
+    margin-top: 120px;
+    position: relative;
+
+    img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: none;
+
+        @media (min-width: 1200px) {
+            display: inline;
+        }
+    }
+
+    .container {
+        text-align: center;
+
+        @media (min-width: 1200px) {
+            text-align: start;
+        }
+
+        .orange-text {
+            padding-top: 120px;
+            padding-bottom: 20px;
+
+        }
+        .our-services-title {
+            font-size: 45px;
+            font-family: $font-DMsans;
+            font-weight: $font-weight-bold;
+            padding-bottom: 20px;
+
+            @media (min-width: 1200px) {
+                padding-bottom: 0;
+                width: 500px;
+            }
+
+        }
+
+        .content-boxes {
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+            @media (min-width: 1200px) {
+                display: flex;
+            }
+            
+
+            .box {
+                padding: 90px 30px 45px 30px;
+                background-color: $color-white;
+                transition: all 0.25s ease-in-out;
+
+
+                div {
+                    font-size: 22px;
+                    font-family: $font-DMsans;
+                    font-weight: $font-weight-bold;
+                    margin-bottom: 18px;
+                }
+
+                p {
+                    margin-bottom: 24px;
+                }
+                .link {
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+
+                    a {
+                        background-color: $color-black-10;
+                        color: $color-white;
+                        border-radius: 50%;
+                        padding: 10px 20px;
+                        transition: all 0.25s ease-in-out;
+                    }
+                }
+
+                &:hover {
+                    background-color: $color-yellow;
+                    a {
+                        background-color: $color-white;
+                        color: $color-black-10;
+                    }
+                }
+            }
+        }
+
+        .flex-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 120px;
+        }   
+        
+
+    }
+}
