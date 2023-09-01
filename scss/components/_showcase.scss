@@ -1,0 +1,46 @@
+.background-showcase {
+    position: relative;
+    z-index: 0;
+    background-color: $color-beige;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .showcase-info {
+
+            .showcase-title {
+                font-style: $font-DMsans;
+                font-size: 84px;
+                font-weight: $font-weight-bold;
+                
+            }
+
+            .showcase-text {
+                font-size: 18px;
+                font-weight: $font-weight-regular;
+                margin: 15px 0 0 0;
+            }
+
+            .showcase-buttons {
+                margin: 50px 0 0 0;
+                z-index: 1;
+
+                .theme-btn {
+                    margin: 0 10px 0 0;
+                }
+            }
+        }
+
+        .showcase-image {
+            margin-top: 80px;
+            margin-right: -50px;
+        }
+    }
+    .background-lines {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+}

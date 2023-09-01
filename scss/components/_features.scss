@@ -1,0 +1,59 @@
+.features {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid $color-border;
+
+        .features-info {
+            width: 70%;
+            padding: 50px 100px 200px 60px;
+
+            .features-text {
+                font-size: 18px;
+                font-weight: $font-weight-medium;
+                color: $color-orange;
+            }
+
+            .features-title {
+                font-size: 45px;
+                font-family: $font-DMsans;
+                font-weight: $font-weight-bold;
+            }
+
+            .theme-btn {
+                margin-top: 30px;
+                width: 100%;
+            }
+        }
+
+        .features-categories {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            gap: 30px;
+            padding-right: 50px;
+
+            .features-cube {
+                div {
+                    font-size: 25px;
+                    margin-bottom: 15px;
+                }
+                h4 {
+                    font-family: $font-DMsans;
+                    font-size: 22px;
+                    font-weight: $font-weight-bold;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: $font-weight-regular;
+                }
+            }
+        }
+
+    }
+}

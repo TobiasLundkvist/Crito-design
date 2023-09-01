@@ -1,0 +1,45 @@
+.about-company {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .about-image {
+            position: relative;
+            .image-person {
+                width: 480px;
+                height: 615px;
+                padding-left: 60px;
+            }
+            .about-person {
+                background-color: $color-lightblue;
+                position: absolute;
+                bottom: 50px;
+                height: 180px;
+                width: 368px;
+                padding: 30px;
+                box-shadow: 1px 1px 5px;
+                
+
+                h5{
+                    font-family: $font-DMsans;
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                    i{
+                        color: $color-orange;
+                        font-style: normal;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .about-effect {
+                position: absolute;
+                top: 80px;
+                left: 30px;
+            }
+
+        }
+    }
+}

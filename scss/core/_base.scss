@@ -1,0 +1,51 @@
+html, body {
+    font-size: 16px;
+    font-family: $font-inter;
+    font-weight: $font-weight-regular;
+    color: $color-black-10;
+}
+
+a {
+    color: $color-black-10;
+    text-decoration: none;
+}
+
+.theme-btn {
+    border: 1px solid $color-beige;
+    color: $color-black-10;
+    background-color: $color-yellow;
+    padding: 12px 35px 12px 35px;
+    border-radius: 30px;
+    transition: all 0.25s ease-in-out;
+
+
+    &:hover {
+        background-color: $color-yellow-hover;
+    }
+
+    i {
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+    
+}
+
+.beige-theme-btn {
+    border: 1px solid $color-black-10;
+    color: $color-black-10;
+    background-color: $color-beige;
+    padding: 12px 35px 12px 35px;
+    border-radius: 30px;
+    transition: all 0.25s ease-in-out;
+
+
+    &:hover {
+        background-color: $color-yellow-hover;
+    }
+
+    i {
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+    
+}
