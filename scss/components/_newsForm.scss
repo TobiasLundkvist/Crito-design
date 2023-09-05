@@ -1,0 +1,35 @@
+.news-form {
+    margin-top: 160px;
+    background-color: $color-beige;
+    padding-top: 115px;
+    padding-bottom: 115px;
+    position: relative;
+
+    .effect {
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .news-title {
+            font-family: $font-DMsans;
+            font-size: 45px;
+            font-weight: $font-weight-bold;
+        }
+
+        form {
+            .signup-input {
+                border: none;
+                padding: 12px 50px 12px 30px;
+                border-radius: 25px;
+                margin-right: 10px;
+            }
+
+        }
+    }
+}
