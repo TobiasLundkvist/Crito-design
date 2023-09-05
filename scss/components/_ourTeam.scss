@@ -1,0 +1,49 @@
+.our-team {
+    background-color: $color-yellow;
+    margin-top: 90px;
+    .container {
+        padding-top: 110px;
+        padding-bottom: 120px;
+
+        .team {
+            margin-top: 30px;
+            margin-bottom: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .our-team-title {
+                font-family: $font-DMsans;
+                font-weight: bold;
+                font-size: 45px;
+            }  
+        }
+ 
+
+        .members {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 130px;
+
+            .member {
+                img {
+                    width: 308px;
+                    height: auto;
+                    margin-bottom: 35px;
+                }
+        
+                div {
+                    font-family: $font-DMsans;
+                    font-weight: $font-weight-bold;
+                    font-size: 22px;
+                }
+        
+                p {
+                    font-size: 16px;
+                    font-weight: $font-weight-medium;
+                }
+            }
+        }
+    }
+}
