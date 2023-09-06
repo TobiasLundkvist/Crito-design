@@ -22,10 +22,18 @@
 
             .project-box {
                 margin-bottom: 20px;
-                img {
+
+                .project-box-image {
                     width: 645px;
                     height: 310px;
+                    overflow: hidden;
+
+                    img {
+                        width: 645px;
+                        height: auto;
+                    }
                 }
+
                 .project-box-title {
                     font-family: $font-DMsans;
                     font-size: 22px;
