@@ -45,8 +45,9 @@
                 margin: 0;
                 li {
                     margin-top: 20px;
-                    color: $color-black-30;
-
+                    a {
+                        color: $color-black-30;
+                    }
                 }
             }
         }
