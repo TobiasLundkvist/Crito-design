@@ -1,0 +1,115 @@
+.article-section {
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 140px;
+
+
+        .the-article {
+            width: 768px;
+            .article-title {
+                font-family: $font-DMsans;
+                font-size: 45px;
+                font-weight: $font-weight-bold;
+                margin-top: 130px;
+            } 
+
+            .article-info {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 30px;
+                margin-top: 30px;
+                margin-bottom: 70px;
+                font-family: $font-DMsans;
+                font-size: 20px;
+                font-weight: $font-weight-medium;
+
+                .circle {
+                    font-size: 0.8rem;
+                    margin-top: 8px;
+                    color: $color-yellow;
+                }
+            }
+        }
+
+        .article-image {
+            width: 768px;
+            height: 500px;
+            overflow: hidden;
+            img {
+                width: 768px;
+                height: auto;
+            }
+        }
+
+        .article-text {
+
+        }
+
+        .article-tags {
+
+            .tag {
+
+            }
+        }
+
+        .posts {    
+
+            .recent-posts {
+                padding: 50px 35px 40px 35px;
+                margin-top: 40px;
+                border: 1px solid $color-border-post;
+
+                .recent-post-title {
+                    font-size: 22px;
+                    font-family: $font-DMsans;
+                    font-weight: $font-weight-bold;
+                }
+
+                .post-link {
+                    &:hover {
+                        .post-title {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .post {
+                        margin-top: 25px;
+                        
+    
+                        .post-title {
+                            font-size: 16px;
+                            font-weight: $font-weight-bold;
+                            font-family: $font-DMsans;
+                        }
+    
+                        .post-datum {
+                            font-size: 14px;
+                            font-family: $font-inter;
+                            font-weight: $font-weight-regular;
+                            color: $color-black-28;
+                            padding-bottom: 15px;
+                            margin-bottom: 20px;
+                            border-bottom: 1px solid $color-border-post;
+                        }
+                    }
+                }
+            }
+
+            .post-categories {
+
+                .post-categories-title {
+
+                }
+
+                .categories {
+
+                }
+            }
+        }
+
+    }
+}
