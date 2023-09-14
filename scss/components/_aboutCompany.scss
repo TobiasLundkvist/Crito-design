@@ -109,6 +109,12 @@
                     border-radius: 50%;
                     display: none;
 
+                    &:hover {
+                        background-color: $color-black-10;
+                        color: $color-white;
+                        transition: all 0.25s ease-in-out;
+                    }
+
                     @media (min-width: 992px) {
                         display: inline;
                     }

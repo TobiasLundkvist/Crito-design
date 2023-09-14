@@ -50,6 +50,10 @@
                     font-weight: $font-weight-medium;
                     padding-bottom: 10px;
                     padding-right: 10px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }

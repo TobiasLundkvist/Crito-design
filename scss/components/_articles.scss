@@ -1,0 +1,20 @@
+.articles {
+
+    .container {
+
+        .article-title {
+            font-size: 45px;
+            font-family: $font-DMsans;
+            font-weight: $font-weight-bold;
+            margin-top: 140px;
+            margin-bottom: 40px;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+        }
+    }
+}

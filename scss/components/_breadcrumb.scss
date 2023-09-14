@@ -17,10 +17,11 @@
         align-items: center;
 
         .breadcrumb-text {
-            font-weight: $font-weight-light;
+            font-weight: $font-weight-semibold;
             
             span {
                 margin-right: 18px;
+                font-weight: $font-weight-light;
             }
         }
 

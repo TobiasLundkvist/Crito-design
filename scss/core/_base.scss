@@ -8,8 +8,13 @@ html, body {
 a {
     color: $color-black-10;
     text-decoration: none;
+
+    // &:hover {
+    //     text-decoration: underline;
+    // }
 }
 
+/* Buttons */
 .theme-btn {
     border: 1px solid $color-beige;
     color: $color-black-10;
@@ -19,8 +24,11 @@ a {
     transition: all 0.25s ease-in-out;
 
 
+
     &:hover {
         background-color: $color-yellow-hover;
+        text-decoration: none;
+
     }
 
     i {
@@ -41,6 +49,7 @@ a {
 
     &:hover {
         background-color: $color-yellow-hover;
+        text-decoration: none;
     }
 
     i {
@@ -62,6 +71,7 @@ a {
     &:hover {
         background-color: $color-button-border;
         border: 1px solid $color-button-border;
+        text-decoration: none;
     }
 
     i {
@@ -75,4 +85,72 @@ a {
     font-size: 18px;
     font-weight: $font-weight-medium;
     color: $color-orange;
+}
+
+/* Articles card */
+.news-card {
+    position: relative;
+    transition: all 0.25s ease-in-out;
+    padding: 5px;
+    margin-bottom: 50px;
+    display: inline-block;
+
+    &:hover {
+        background-color: $color-beige;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    .datum-box {
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        padding: 18px 15px 12px 15px;
+        line-height: 1.2;
+        background-color: $color-yellow;
+        font-family: $font-DMsans;
+        font-size: 22px;
+        font-weight: $font-weight-bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+
+        span {
+            font-family: $font-inter;
+            font-size: 16px;
+            font-weight: $font-weight-regular;
+        }
+    }
+
+    .news-image {
+        width: 420px;
+        height: 230px;
+        overflow: hidden;
+
+
+        img {
+            width: 420px;
+            height: auto;
+        }
+
+    }
+
+    .news-category {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: $font-weight-regular;
+    }
+
+    .news-text {
+        font-family: $font-DMsans;
+        font-size: 22px;
+        font-weight: $font-weight-bold;
+        margin-bottom: 24px;
+
+    }
+
+    .news-body-text {
+        font-weight: $font-weight-regular;
+    }
 }

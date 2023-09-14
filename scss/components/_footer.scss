@@ -47,6 +47,10 @@
                     margin-top: 20px;
                     a {
                         color: $color-black-30;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
                     }
                 }
             }
