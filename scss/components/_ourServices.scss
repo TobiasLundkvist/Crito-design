@@ -40,62 +40,66 @@
         }
 
         .content-boxes {
-            display: none;
-            align-items: center;
-            justify-content: space-between;
-            gap: 25px;
-            margin-top: 40px;
-            margin-bottom: 40px;
-
-            @media (min-width: 1200px) {
-                display: flex;
-            }
-            
-
-            .box {
-                padding: 50px 30px 45px 30px;
-                background-color: $color-white;
-                transition: all 0.25s ease-in-out;
-
-
-                .top-line {
-                    border: 1px solid $color-black-10;
-                    width: 40px;
-                }
-
-                .box-title {
-                    margin-top: 45px;
-                    font-size: 22px;
-                    font-family: $font-DMsans;
-                    font-weight: $font-weight-bold;
-                    margin-bottom: 18px;
-                }
-
-                p {
-                    margin-bottom: 24px;
-                }
-                .link {
+            .umb-block-list {
+                display: none;
+                align-items: center;
+                justify-content: space-between;
+                gap: 25px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+    
+                @media (min-width: 1200px) {
                     display: flex;
-                    align-items: center;
-                    justify-content: end;
+                }
 
-                    a {
-                        background-color: $color-black-10;
-                        color: $color-white;
-                        border-radius: 30px;
-                        padding: 15px 20px;
-                        transition: all 0.25s ease-in-out;
+                .box {
+                    padding: 50px 30px 45px 30px;
+                    background-color: $color-white;
+                    transition: all 0.25s ease-in-out;
+    
+    
+                    .top-line {
+                        border: 1px solid $color-black-10;
+                        width: 40px;
+                    }
+    
+                    .box-title {
+                        margin-top: 45px;
+                        font-size: 22px;
+                        font-family: $font-DMsans;
+                        font-weight: $font-weight-bold;
+                        margin-bottom: 18px;
+                    }
+    
+                    p {
+                        margin-bottom: 24px;
+                    }
+                    .link {
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+    
+                        a {
+                            background-color: $color-black-10;
+                            color: $color-white;
+                            border-radius: 30px;
+                            padding: 15px 20px;
+                            transition: all 0.25s ease-in-out;
+                        }
+                    }
+    
+                    &:hover {
+                        background-color: $color-yellow;
+                        a {
+                            background-color: $color-white;
+                            color: $color-black-10;
+                        }
                     }
                 }
 
-                &:hover {
-                    background-color: $color-yellow;
-                    a {
-                        background-color: $color-white;
-                        color: $color-black-10;
-                    }
-                }
+
             }
+
         }
 
         .flex-btn {

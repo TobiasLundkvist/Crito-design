@@ -1,0 +1,38 @@
+.company-contact {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .company-info {
+            margin-top: 120px;
+            border: 1px solid $color-border;
+            padding: 48px 110px 48px 50px; 
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+
+            i {
+                color: $color-white;
+                background-color: $color-black-10;
+                padding: 22px 22px;
+                border-radius: 50px;
+                font-size: 1.4rem;
+            }
+
+            .company-address {
+                margin-left: 25px;
+                color: $color-button-border;
+            }
+            .company-address-title {
+                font-size: 22px;
+                font-family: $font-DMsans;
+                font-weight: $font-weight-bold;
+                color: $color-black-10;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

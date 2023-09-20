@@ -16,5 +16,32 @@
             grid-template-columns: 1fr 1fr 1fr;
             gap: 15px;
         }
+
+        .item-pagination {
+            text-align: center;
+
+            .item-link {
+                padding: 5px 15px 5px 15px;
+                margin: 3px;
+                border: 1px solid $color-border;
+                border-radius: 5px;
+                font-family: $font-DMsans;
+                font-size: 21px;
+                font-weight: $font-weight-medium;
+                transition: all ease-in-out 0.25s;
+
+                &:hover {
+                    background-color: $color-black-10;
+                    color: $color-white;
+                    border: 1px solid $color-black-10;
+                }  
+
+            }
+            .active {
+                background-color: $color-black-10;
+                color: $color-white;
+                border: 1px solid $color-black-10;
+            }
+        }
     }
 }

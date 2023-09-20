@@ -81,6 +81,26 @@ a {
     
 }
 
+.white-theme-btn {
+    border: 1px solid $color-black-10;
+    background-color: $color-white;
+    padding: 15px 35px 15px 35px;
+    border-radius: 30px;
+    transition: all 0.25s ease-in-out;
+
+
+    &:hover {
+        background-color: $color-beige;
+        text-decoration: none;
+    }
+
+    i {
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+    
+}
+
 .orange-text {
     font-size: 18px;
     font-weight: $font-weight-medium;
@@ -152,5 +172,37 @@ a {
 
     .news-body-text {
         font-weight: $font-weight-regular;
+    }
+}
+
+
+/* Article recent */
+.recent-article-post {
+    background-color: $color-beige;
+    padding-bottom: 70px;
+
+    .orange-text {
+        padding-top: 40px;
+    }
+
+}
+.dot-pagnation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    .dot-link {
+        .dot-active {
+            color: $color-black-10; 
+        }
+        i {
+            color: $color-dot-pagnation;
+            font-size: 0.8em;
+
+            &:hover {
+                color: $color-black-10;
+            }
+        }
     }
 }
